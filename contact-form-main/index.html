@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label>Query Type *</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="generalEnquiry" name="queryType" value="generalEnquiry" required>
+                    <label for="generalEnquiry">General Enquiry</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="supportRequest" name="queryType" value="supportRequest">
+                    <label for="supportRequest">Support Request</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" rows="4" required></textarea>
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">I consent to being contacted by the team *</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- Add this just before the closing </body> tag -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+      <span class="popup-icon">✓</span>
+      <h3>Message Sent!</h3>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+</div>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
